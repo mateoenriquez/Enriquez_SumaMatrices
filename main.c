@@ -41,6 +41,7 @@ int main(){
         
     }
 
+        printf("\nMatriz 1\n");
         for (int i = 0; i < n; i++)
     {
         printf("\n");
@@ -61,6 +62,7 @@ int main(){
         
     }
 
+        printf("\n\nMatriz 2\n");
         for (int i = 0; i < n; i++)
     {
         printf("\n");
@@ -80,6 +82,7 @@ int main(){
         
     }
 
+        printf("\n\nSuma de matriz 1 y matriz 2\n");
         for (int i = 0; i < n; i++)
     {
         printf("\n");
