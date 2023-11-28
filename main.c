@@ -6,6 +6,7 @@ int main(){
 
     int n, m;
     int n2, m2;
+    int n3, m3;
     srand(time(NULL));
 
     printf("Ingresar el numero de filas de la primera matriz: ");
@@ -19,12 +20,17 @@ int main(){
 
     int matriz[n][m];
     int matriz2[n2][m2];
+    
 
-    if (n=!n2 || m=!m2)
+    if (n!=n2 || m!=m2)
     {
         printf("La suma no puede ser dada por las matrices no son iguales entre si \n");
         return 0;
     }
+
+    n3=n2=n;
+    m3=n2=n;
+    int matriz3[n3][m3];
 
         for (int i = 0; i < n; i++)
     {
@@ -40,7 +46,7 @@ int main(){
         printf("\n");
         for (int j = 0; j < m; j++)
         {
-            printf("%d ", matriz[i][j])
+            printf("%d ", matriz[i][j]);
         }
         
     }
@@ -60,12 +66,29 @@ int main(){
         printf("\n");
         for (int j = 0; j < m; j++)
         {
-            printf("%d ", matriz2[i][j])
+            printf("%d ", matriz2[i][j]);
         }
         
     }
-    
-            
+
+        for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            matriz3[i][j]=matriz[i][j]+matriz2[i][j];
+        }
+        
+    }
+
+        for (int i = 0; i < n; i++)
+    {
+        printf("\n");
+        for (int j = 0; j < m; j++)
+        {
+            printf("%d ", matriz3[i][j]);
+        }
+        
+    }    
 
     return 0;
 }
