@@ -20,7 +20,11 @@ int main(){
     int matriz[n][m];
     int matriz[n2][m2];
 
-    
+    if (n=!n2 || m=!m2)
+    {
+        printf("La suma no puede ser dada por las matrices no son iguales entre si \n");
+        return 0;
+    }    
 
 
     return 0;
